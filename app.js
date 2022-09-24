@@ -67,7 +67,7 @@ function active(thumb){
  }//removing active from the thumbnail
  function updateItem(){
     itemCount.textContent = item
-    cartCounter.classList.add('show-counter')
+    // cartCounter.classList.add('show-counter')
     multiplier.textContent = item;
     cartCounter.textContent =item;
     multPrice.textContent = price;
@@ -181,6 +181,7 @@ cart.addEventListener('click',()=>{
 //add to cart event an dfunction
 addToCart.addEventListener('click',()=>{
     //show cart detail
+     cartCounter.classList.add('show-counter')
     if(item > 0){
         
         showCartDetails()
