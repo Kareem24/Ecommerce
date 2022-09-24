@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main class="container-all">
+  <div class="modal-container">
+    <button class="close-modal">
+      <img src="images/icon-close.svg" alt="">
+    </button>
+    <!-- <div class="ModalBtn">
+
+      <button class="left"><img src="images/icon-previous.svg" alt=""></button>
+      <button class="right"><img src="images/icon-next.svg" alt=""></button>
+    </div> -->
+    <div class="display-pictures">
+      <img src="images/image-product-1.jpg" alt="" id="modal-picture" class="display-picture">
+    </div>
+    <div class="product-thumnails">
+      <button class="modalthumbnail-btn modal1" id="modal1">
+        <img src="images/image-product-1-thumbnail.jpg" alt="" class="thumbnails thumb1">
+      </button>
+      <button class="modalthumbnail-btn modal2"  id="modal2">
+        <img src="images/image-product-2-thumbnail.jpg" alt="" class="thumbnails thumb2">
+      </button>
+      <button class="modalthumbnail-btn modal3" id="modal3">
+        <img src="images/image-product-3-thumbnail.jpg" alt="" class="thumbnails thumb3">
+      </button>
+      <button class="modalthumbnail-btn modal4"  id="modal4">
+        <img src="images/image-product-4-thumbnail.jpg" alt=""class="thumbnails thumb4">
+      </button>
+    </div>
+  </div>
+
+    <div class="container">
+
+      <nav class="navbar">
+        <div class="right-col">
+          <button class="hamburger">
+            <img src="images/icon-menu.svg" alt="menu icon">
+          </button>
+          <div class="logo">
+  <!-- logo image -->
+            <img src="images/logo.svg" alt="logo" id="logo">
+          </div>
+          <!-- nav links -->
+          <div class="navlinks ">
+            <button class="closeBtn">
+
+              <img src="images/icon-close.svg" alt="close" >
+            </button>
+
+            <ul class="links">
+              <li><a href="#">Collections</a></li>
+              <li><a href="#">Mens</a></li>
+              <li><a href="#">Women</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- user and cart image -->
+        <div class="user">
+          <span class="cart-count">
+            <img src="images/icon-cart.svg" alt="cart" id="cart">
+            <span class="counter ">0</span>
+
+          </span>
+          <img src="images/image-avatar.png" alt="" id="user-image">
+        </div>
+      </nav>
+      <!-- navbar ends here -->
+      <!-- horizontal line -->
+      <hr class="nav-horizon">
+<!-- the dynamic cart information -->
+      <div class="cart-track ">
+        <div class="cart-title">
+          <h3>cart</h3>
+        </div>
+        <hr class="cart-horizon">
+        <div class="cart-item">
+          <div class="empty">
+
+            <p class="p">your cart is empty
+              
+            </p>
+          </div>
+          <div class="cart-details">
+            <div class="top">
+
+              <img src="images/image-product-1-thumbnail.jpg" alt="product-thumbnail">
+                <div class="cart-text">
+                  
+    
+                    <p>
+                      Fall Limited Edition Sneakers
+                    </p>
+                    <p>$ 125.00 x <span class="mult">0</span> <span class="decimal">$</span><span class="pricing">125</span><span class="decimal">.00</span></p>
+                </div>
+                <button class="delete-cartBtn">del</button>
+              
+            </div>
+            <div class="checkoutBtn">
+
+              <button class="checkout" >checkout</button>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+<!-- product details section start here -->
+      <div class="product-section">
+        <!-- product display pictures-->
+        <div class="products">
+          <div class="display-pictures">
+            <img src="images/image-product-1.jpg" alt="" id="display-picture" class="display-picture">
+            <div class="changeBtn">
+
+              <button class="left"><img src="images/icon-previous.svg" alt=""></button>
+              <button class="right"><img src="images/icon-next.svg" alt=""></button>
+            </div>
+          </div>
+          <div class="product-thumnails">
+            <button class="thumbnail-btn thumb1" id="thumb1">
+              <img src="images/image-product-1-thumbnail.jpg" alt="" class="thumbnails " >
+            </button>
+            <button class="thumbnail-btn thumb2" id="thumb2">
+              <img src="images/image-product-2-thumbnail.jpg" alt="" class="thumbnails ">
+            </button>
+            <button class="thumbnail-btn thumb3" id="thumb3">
+              <img src="images/image-product-3-thumbnail.jpg" alt="" class="thumbnails ">
+            </button>
+            <button class="thumbnail-btn thumb4" id="thumb4">
+              <img src="images/image-product-4-thumbnail.jpg" alt=""class="thumbnails ">
+            </button>
+          </div>
+        </div>
+        <!-- diplay pictures ends here -->
+        <div class="product-details">
+        
+          <div class="product-container">
+
+            <p class="title">sneaker company</p>
+            <h1 class="heading">fall limited edition sneakers</h1>
+            <p class="text">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+              durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+              <span class="price-discount">
+
+                <h3 class="discount">$125.00 </h3> <span class="percent">50%</span>
+              </span>
+              <p class="price">$250.00</p>
+              <div class="cart-value">
+                <div class="item-piece">
+                  <span class="span minus">-</span>
+                  <span class="span value">0</span>
+                  <span class="span add">+</span>
+                </div>
+                <button class="add-to-cart"><img src="images/icon-cart.svg" alt=""> Add to cart</button>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </main>
+
+  <!-- Collections
+  Men
+  Women
+  About
+  Contact
+
+  Sneaker Company
+
+  Fall Limited Edition Sneakers
+
+  These low-profile sneakers are your perfect casual wear companion. Featuring a 
+  durable rubber outer sole, they’ll withstand everything the weather can offer.
+
+  $125.00
+  50%
+  $250.00
+
+  0
+  Add to cart -->
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="github.com/kareem24" target="_blank">kareem roqib</a>.
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
