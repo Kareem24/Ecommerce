@@ -208,20 +208,20 @@ checkouBtn.addEventListener('click',()=>{
 let next = 0
 nextBtn.addEventListener('click',()=>{
     next++
+    if(next > images.length-1){
+       next= 0
+    //    displayPicture.src = images[0]
+   }
  displayPicture.src = images[next]
- if(next > images.length-1){
-    next= 0
-    displayPicture.src = images[0]
-}
 }
 )
 prevBtn.addEventListener('click',()=>{
     next--
-    displayPicture.src= images[next]
     if(next < 0){
-       next = images.length -1
-       displayPicture.src= images[3]
+        next = images.length -1
+        // displayPicture.src= images[3]
     }
+    displayPicture.src= images[next]
 });
 
 // hamburger menu function 

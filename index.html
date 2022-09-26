@@ -6,6 +6,11 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;600;700&display=swap" rel="stylesheet"> 
   
   <title>Frontend Mentor | E-commerce product page</title>
 
@@ -30,18 +35,18 @@
       <img src="images/image-product-1.jpg" alt="" id="modal-picture" class="display-picture">
     </div>
     <div class="product-thumnails">
-      <button class="modalthumbnail-btn modal1" id="modal1">
+      <div class="modalthumbnail-btn modal1" id="modal1">
         <img src="images/image-product-1-thumbnail.jpg" alt="" class="thumbnails thumb1">
-      </button>
-      <button class="modalthumbnail-btn modal2"  id="modal2">
+      </div>
+      <div class="modalthumbnail-btn modal2"  id="modal2">
         <img src="images/image-product-2-thumbnail.jpg" alt="" class="thumbnails thumb2">
-      </button>
-      <button class="modalthumbnail-btn modal3" id="modal3">
+      </div>
+      <div class="modalthumbnail-btn modal3" id="modal3">
         <img src="images/image-product-3-thumbnail.jpg" alt="" class="thumbnails thumb3">
-      </button>
-      <button class="modalthumbnail-btn modal4"  id="modal4">
+      </div>
+      <div class="modalthumbnail-btn modal4"  id="modal4">
         <img src="images/image-product-4-thumbnail.jpg" alt=""class="thumbnails thumb4">
-      </button>
+      </div>
     </div>
   </div>
 
@@ -110,7 +115,9 @@
                     </p>
                     <p>$ 125.00 x <span class="mult">0</span> <span class="decimal">$</span><span class="pricing">125</span><span class="decimal">.00</span></p>
                 </div>
-                <button class="delete-cartBtn">del</button>
+                <button class="delete-cartBtn">
+                  <i class='bx bx-trash'></i>
+                </button>
               
             </div>
             <div class="checkoutBtn">
@@ -135,18 +142,18 @@
             </div>
           </div>
           <div class="product-thumnails">
-            <button class="thumbnail-btn thumb1" id="thumb1">
+            <div class="thumbnail-btn thumb1" id="thumb1">
               <img src="images/image-product-1-thumbnail.jpg" alt="" class="thumbnails " >
-            </button>
-            <button class="thumbnail-btn thumb2" id="thumb2">
+            </div>
+            <div class="thumbnail-btn thumb2" id="thumb2">
               <img src="images/image-product-2-thumbnail.jpg" alt="" class="thumbnails ">
-            </button>
-            <button class="thumbnail-btn thumb3" id="thumb3">
+            </div>
+            <div class="thumbnail-btn thumb3" id="thumb3">
               <img src="images/image-product-3-thumbnail.jpg" alt="" class="thumbnails ">
-            </button>
-            <button class="thumbnail-btn thumb4" id="thumb4">
+            </div>
+            <div class="thumbnail-btn thumb4" id="thumb4">
               <img src="images/image-product-4-thumbnail.jpg" alt=""class="thumbnails ">
-            </button>
+            </div>
           </div>
         </div>
         <!-- diplay pictures ends here -->
@@ -160,7 +167,7 @@
               durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
               <span class="price-discount">
 
-                <h3 class="discount">$125.00 </h3> <span class="percent">50%</span>
+                <p class="discount">$125.00 </p> <span class="percent">50%</span>
               </span>
               <p class="price">$250.00</p>
               <div class="cart-value">
